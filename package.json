@@ -1,0 +1,35 @@
+{
+	"name": "kramscript",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.ts",
+	"scripts": {
+		"start": "nodemon"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/kramarenko/kramscript.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/kramarenko/kramscript/issues"
+	},
+	"homepage": "https://github.com/kramarenko/kramscript#readme",
+	"dependencies": {
+		"@types/node": "^15.12.5",
+		"nodemon": "^2.0.9",
+		"ts-node": "^10.0.0",
+		"typescript": "^4.3.5"
+	},
+	"nodemonConfig": {
+		"watch": [
+			"src"
+		],
+		"ext": ".ts,.js",
+		"ignore": [
+			"*.test.ts"
+		],
+		"exec": "ts-node ./src/index.ts"
+	}
+}
