@@ -1,5 +1,4 @@
 import TokenType from './types/TokenType';
-
 export default class Token {
 	type: TokenType;
 	text: string;
